@@ -3,7 +3,7 @@
 /* CSS Document */
 :root{
     --maincolor: rgb(44, 44, 44);
-    --sec-color: rgb(57, 88, 172);
+    --sec-color: rgb(71, 112, 226);
     --bg-color: rgb(239, 239, 255);
     --alt-con1: #000;
     --alt-con2: #fff;
@@ -16,7 +16,9 @@
 body{
     background-color: var(--bg-color);
     font-family:'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
 }
+/*Header e Nav*/ 
 header{
     padding: 0.8%;
     width: 100%;
@@ -27,6 +29,46 @@ h1{
     padding: 5px;
     font-weight: bolder;
 }
+.txtcor{
+    color: var(--sec-color);
+    font-size: 190%;
+}
+.txtcor+.minortxt{
+    font-size: 40%;
+    writing-mode: vertical-rl;
+    margin-left: 0.5%;
+}
+
+nav>ul{
+    background-color: var(--maincolor);
+    display: flex;
+    list-style-type: none;
+}
+nav>ul:hover{
+    padding:0;
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-item>a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.nav-item:hover{
+    background-color: var(--sec-color);
+    padding: 10px;
+    transition: 0.7s;
+    border-radius: 8px 8px 0 0;
+}
+ul li:first-child a{
+    padding-left: 1px;
+}
+
+/* FIM DE HEADER E NAV */
+
+/* Informações sobre o curso */
+
 section:first-of-type h2{
     text-align: center;
 }
@@ -45,7 +87,12 @@ h2{
     padding: 5px;
     margin: 10px 0;
 }
-#grid-container{
+
+/* FIM  INFORMAÇÕES SOBRE O CURSO */
+
+/* GRADE DO CURSO */
+
+#grad-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -74,28 +121,21 @@ li:not(.nav-item):nth-child(odd){
     background-color: rgb(182, 188, 201);
 }
 
-nav>ul{
+/* FIM GRADE DO CURSO */
+
+footer{
+    width: 100%;
     background-color: var(--maincolor);
-    display: flex;
-    list-style-type: none;
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5%;
 }
-nav>ul:hover{
-    padding:0;
-}
-.nav-item{
-    padding: 10px;
-}
-.nav-item>a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-}
-.nav-item:hover{
-    background-color: var(--sec-color);
-    padding: 10px;
-    transition: 0.7s;
-    border-radius: 8px 8px 0 0;
-}
-ul li:first-child a{
-    padding-left: 1px;
+@media (max-width: 700px) {
+    #grad-container{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
