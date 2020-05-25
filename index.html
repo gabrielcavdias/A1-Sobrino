@@ -7,17 +7,23 @@
         <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
+        <div id="fontcontrol">
+            <input type="button" value="Alto Contraste" onclick="altocontraste()">
+            <input type="button" value="A+" id="A+" onclick="aumentar()">
+            <input type="button" value="A-" id="A-" onclick="diminuir()">
+        </div>
         <header>
              <h1 tabindex="0">Sistemas para <span class="txtcor">Internet</span><span class="minortxt">FatecRL</span></h1> 
-        </header>
-        <nav>
-            <ul class="navbar">
-                <li class="nav-item"><a href="#grade_SI">Grade do Curso</a></li>
-                <li class="nav-item"><a href="#perfil_SI">Perfil do Profissional</a></li>
-                <li class="nav-item"><a href="#mercado_SI">Mercado de Trabalho</a></li>
-            </ul>
-        </nav>
-
+             <nav>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#grade_SI">Grade do Curso</a></li>
+                    <li class="nav-item"><a href="#perfil_SI">Perfil do Profissional</a></li>
+                    <li class="nav-item"><a href="#mercado_SI">Mercado de Trabalho</a></li>
+                </ul>
+            </nav>
+    
+            </header>
+       
         <section>
             <h2>Informações sobre o curso</h2>
             <img src="img/coding_html.jpg" alt="Código HTML em uma página">
@@ -109,6 +115,6 @@
         <footer>
            <span> &copy;Neon Knights </span>
         </footer>
-
+        <script src="script/main.js"></script>
     </body>
 </html>

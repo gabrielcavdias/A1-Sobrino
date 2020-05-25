@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* CSS Document */
 :root{
-    --maincolor: rgb(44, 44, 44);
+    --maincolor:  rgb(44, 44, 44);
     --sec-color: rgb(71, 112, 226);
     --bg-color: rgb(239, 239, 255);
-    --alt-con1: #000;
-    --alt-con2: #fff;
-    --tr-speed: 1s;
+    --list-color: rgb(182, 188, 201);
+    --tr-speed: 1s;   
+    font-size: 100%;
 }
 *{
     margin: 0;
@@ -38,7 +38,6 @@ h1{
     writing-mode: vertical-rl;
     margin-left: 0.5%;
 }
-
 nav>ul{
     background-color: var(--maincolor);
     display: flex;
@@ -59,16 +58,24 @@ nav>ul:hover{
     background-color: var(--sec-color);
     padding: 10px;
     transition: 0.7s;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
 }
 ul li:first-child a{
     padding-left: 1px;
 }
-
+#fontcontrol{
+    position: fixed;
+    right: 0;
+}
+input{
+    padding: 0.35rem;
+    border: 3px solid var(--sec-color);
+    background-color: var(--maincolor);
+    color: #fff;
+}
 /* FIM DE HEADER E NAV */
 
 /* Informações sobre o curso */
-
 section:first-of-type h2{
     text-align: center;
 }
@@ -118,7 +125,7 @@ li:not(.nav-item){
     padding: 7px;
 }
 li:not(.nav-item):nth-child(odd){
-    background-color: rgb(182, 188, 201);
+    background-color: var(--list-color)
 }
 
 /* FIM GRADE DO CURSO */
@@ -136,6 +143,9 @@ footer{
     #grad-container{
         display: flex;
         flex-direction: column;
+    }
+    h1{
+        margin-top: 10%;
     }
 
 }
