@@ -4,43 +4,129 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sistemas para Internet</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
+        <!-- As informações não creditadas desse site foram retiradas de "https://fatecrl.edu.br/cursos/sistemas-para-internet" -->
+        <div id="fontcontrol">
+            <input type="button" value="Alto Contraste" onclick="altocontraste()">
+            <input type="button" value="A+" id="A+" onclick="aumentar()">
+            <input type="button" value="A-" id="A-" onclick="diminuir()">
+        </div>
         <header>
-
-             <h1>Sistemas para Internet</h1>
-
+             <h1 tabindex="0">Sistemas para <span class="txtcor">Internet</span><span class="minortxt">FatecRL</span></h1> 
+             <nav>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#grade_SI">Grade do Curso</a></li>
+                    <li class="nav-item"><a href="#perfil_SI">Perfil do Profissional</a></li>
+                    <li class="nav-item"><a href="#mercado_SI">Mercado de Trabalho</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+       
         <section>
             <h2>Informações sobre o curso</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt officiis similique illum eaque? Fugiat velit, similique, voluptas odit magni ea enim dolor, soluta officiis quae accusantium reprehenderit? Mollitia, at autem.</p>
+            <img src="img/coding_html.jpg" alt="Código HTML em uma página">
+            <span class="si-info">Duração:</span>
+            <span>3 anos</span>
+            <span class="si-info">Carga horária:</span>
+            <span>2800 horas</span>
+            <span class="si-info">Horários:</span>
+            <span>matutino</span>
+            <!--Texto abaixo foi copiado apenas para ilustrar como ficaria a página preenchida , o conteúdo pertence à pagina "https://www.uninove.br/graduacao/tecnologia-em-sistemas-para-internet/diferenciais/" -->
+            <p class="si-descr">O curso aborda as principais áreas necessárias para formar um profissional completo capaz de projetar e criar deste o design, a interface do usuário e a parte do site que executa em servidores de aplicação, integrando recursos de forma segura e otimizada por meio das principais ferramentas e linguagens computacionais. Conta com um grupo de professores atuantes no mercado e engajados em pesquisa e inovação, contribuindo diretamente para manter a Matriz Curricular atualizada e alinhada com o mercado de trabalho. O ambiente acolhedor e os recursos tecnológicos disponíveis entregam ao aluno o ambiente ideal para desenvolver seu potencial técnico, criativo, crítico e ético. O aluno aprenderá a projetar, documentar e desenvolver deste sites simples até sites de comércio eletrônico e portais corporativos que integram aplicações e recursos.</p>
         </section>
         <section>
-            <h2>Grade do Curso</h2>
-            <div>1º Ciclo</div>
-            <div>2º Ciclo</div>
-            <div>3º Ciclo</div>
-            <div>4º Ciclo</div>
-            <div>5º Ciclo</div>
-            <div>6º Ciclo</div>
+            <h2 tabindex="1" id="grade_SI">Grade do Curso</h2>
+            <div id="grad-container">
+                <div class="grad">
+                    <h3>1º Ciclo</h3>
+                    <ul>
+                        <li>Algoritmos e lógica de programação</li>
+                        <li>Bases da Internet</li>
+                        <li>Criação de conteúdo na web</li>
+                        <li>Design digital</li>
+                        <li>Fundamentos da matemática elementar</li>
+                        <li>Inglês I</li>
+                        <li>Leitura e produção de textos</li>
+                        <li>Padrões de projeto de sítios Internet I</li>
+                    </ul>
+                </div>
+                <div class="grad">
+                    <h3>2º Ciclo</h3>
+                    <ul>
+                        <li>Estrutura de dados</li>
+                        <li>Inglês II</li>
+                        <li>Legislação aplicada à Internet</li>
+                        <li>Matemática discreta</li>
+                        <li>Padrões de projetos de sítios Internet II</li>
+                        <li>Prática de design</li>
+                        <li>Redes e Internet</li>
+                    </ul>
+                </div>
+                <div class="grad">
+                    <h3>3º Ciclo</h3>
+                    <ul>
+                        <li>Acessibilidade</li>
+                        <li>Banco de dados e internet</li>
+                        <li>Engenharia de Software para web</li>
+                        <li>Estatística</li>
+                        <li>Inglês III</li>
+                        <li>Programação de sítios Internet</li>
+                        <li>Servidores e seus sistemas operacionais</li>
+                    </ul>
+                </div>
+                <div class="grad">
+                    <h3>4º Ciclo</h3>
+                    <ul>
+                        <li>Banco de dados e Internet II</li>
+                        <li>Desenvolvimento para servidores I</li>
+                        <li>Inglês IV</li>
+                        <li>Projeto de navegação e interação</li>
+                        <li>Prática de Gestão de Projetos</li>
+                        <li>Segurança em sistemas para Internet</li>
+                        <li>Tópicos especiais em sistemas para Internet I</li>
+                    </ul>
+                </div>
+                <div class="grad">
+                <h3>5º Ciclo</h3>
+                <ul>
+                    <li>DESENVOLVIMENTO PARA DISPOSITIVOS MÓVEIS</li>
+                    <li>Desenvolvimento para Servidores II</li>
+                    <li>Inglês V</li>
+                    <li>Negócios e Marketing Eletrônicas</li>
+                    <li>Projeto de prototipagem e testes de Usabilidade</li>
+                    <li>Projeto do trabalho de graduação em Sistemas</li>
+                    <li>Tópicos Especiais em Sistema para Internet II</li>
+                </ul>
+                </div>
+                <div class="grad">
+                    <h3>6º Ciclo</h3>
+                    <ul>
+                        <li>Arquitetura orientada a serviços I</li>
+                        <li>Criação de empresas para Internet</li>
+                        <li>Desenvolvimento para dispostivos móveis II</li>
+                        <li>Inglês VI</li>
+                        <li>Projeto de trabalho de graduação em sistemas</li>
+                        <li>Tópicos especiais em sistemas para Internet I</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <article>
-            <h2>Perfil do Profissional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quisquam eveniet tempore sint quod quidem, impedit dolorem vero obcaecati facilis nemo at dolore quis distinctio mollitia nihil soluta modi a.</p>
-            <h2>Mercado de Trabalho</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus laborum eum repudiandae asperiores consequuntur, sint id dignissimos sed nisi odit quaerat porro facere error commodi eaque deserunt perferendis obcaecati! Sapiente.</p>
+            <h2 tabindex="2" id="perfil_SI">Perfil do Profissional</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uT1WVZrrfxg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>O tecnólogo formado neste curso ocupa-se do desenvolvimento de programas, de interfaces e aplicativos, do comércio e do marketing eletrônicos, além de sítios e portais para internet e intranet. Gerencia projetos de sistemas, inclusive com acesso a banco de dados, desenvolvendo projetos de aplicações para a rede mundial de computadores e integra mídias nos sítios da internet. Atua com tecnologias emergentes como computação móvel, redes sem fio e sistemas distribuídos. Cuidar da implantação, atualização, manutenção e segurança dos sistemas para internet também são suas atribuições. </p>
+            <h2 tabindex="3" id="mercado_SI">Mercado de Trabalho</h2>
+            <!-- Texto abaixo foi copiado apenas para ilustrar como ficaria a página preenchida , o conteúdo pertence à pagina "https://portal.estacio.br/unidades/universidade-estácio-de-sá/cursos/graduação/tecnológica/sistemas-para-internet/" -->
+            <p>Produtoras de sites e portais para internet; agências de publicidade e veículos de comunicação; grandes corporações, em projetos de canais de comunicação internos (intranet) e externos (websites e portais); provedores de internet; redes hospitalares; instituições de ensino e empresas produtoras de material didático para a educação nas modalidades presencial e a distância; software houses; redes bancárias.</p>
         </article>
         <footer>
            <span> &copy;Neon Knights </span>
+           <h2>Endereço</h2>
+           <address>Av. Senador Feijó, 350 - Vila Matias, Santos - SP, 11015-502</address>
         </footer>
-
+        <script src="script/main.js"></script>
     </body>
 </html>
+<!--Validado em 25/05/2020 às 17:45-->

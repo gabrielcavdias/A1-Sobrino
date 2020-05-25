@@ -1,0 +1,24 @@
+Helio Gabriel Cavalcante Dias 
+Matrícula    0050831921009
+
+Seletores usados: 
+Seletor de atributo Trecho:  body{  background-color: var(--bg-color);
+ID  #font-control  Trecho:  <div id="fontcontrol"> <input type="button" value="Alto Contraste" onclick="altocontraste()">
+Class .txtcor Trecho: <span class="txtcor">Internet</span>
+Seletor universal Trecho: *{margin:0;
+Irmãos adjacentes Trecho:  .txtcor+.minortxt
+Seletor de filho Trecho: nav>ul
+Seletor de primeiro filho  Trecho:  ul li:first-child a
+Seletor de primeiro do tipo Trecho: section:first-of-type h2{ text-align: center;
+Seletor de "não algo"   Trecho:  section:first-of-type span:not(.si-info)
+Seletor de enésimo filho  Trecho: li:not(.nav-item):nth-child(odd)
+
+
+Implementação de acessibilidade: 
+
+Indicar o idioma da página 
+Tamanho de fonte ajustável 
+Alto Contraste
+Descrição de imagem 
+Tags semânticas
+Tab index 
