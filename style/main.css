@@ -1,13 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* CSS Document */
+/*Regras gerais CSS*/
 :root{
     --maincolor:  rgb(44, 44, 44);
     --sec-color: rgb(71, 112, 226);
     --bg-color: rgb(239, 239, 255);
     --list-color: rgb(182, 188, 201);
     --tr-speed: 1s;   
-    font-size: 100%;
+    font-size: 120%;
 }
 *{
     margin: 0;
@@ -18,10 +18,17 @@ body{
     font-family:'Roboto', Arial, Helvetica, sans-serif;
     width: 100%;
 }
+p{
+    margin: 8px;
+}
+
+/*FIM REGRAS GERAIS CSS*/
+
 /*Header e Nav*/ 
 header{
     padding: 0.8%;
     width: 100%;
+    height: 27%;
     background-color: var(--maincolor);
     color: #fff;
 }
@@ -60,6 +67,9 @@ nav>ul:hover{
     transition: 0.7s;
     border-radius: 8px;
 }
+.nav-item a:hover{
+    color: var(--bg-color);
+}
 ul li:first-child a{
     padding-left: 1px;
 }
@@ -79,9 +89,6 @@ input{
 section:first-of-type h2{
     text-align: center;
 }
-p{
-    margin-left: 5px;
-}
 img{
     display: block;
     margin: 7px auto;
@@ -90,11 +97,31 @@ img{
     border: 2px solid  #ddd;/*var(--sec-color); */
     padding: 5px;
 }
+h2,.si-info{
+    color: var(--sec-color);
+    font-weight: bold;
+}
 h2{
     padding: 5px;
     margin: 10px 0;
 }
-
+section:first-of-type span{
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 01%;
+}
+section:first-of-type span:not(.si-info){
+    font-weight: bold;
+}
+iframe{
+    display: block;
+    margin: 1% auto;
+    border: 2px solid var(--sec-color);
+}
+article h2{
+    text-align: center;
+}
 /* FIM  INFORMAÇÕES SOBRE O CURSO */
 
 /* GRADE DO CURSO */
@@ -102,7 +129,6 @@ h2{
 #grad-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
 }
 h3, ul:not(.navbar){
     width: 90%;
@@ -130,6 +156,8 @@ li:not(.nav-item):nth-child(odd){
 
 /* FIM GRADE DO CURSO */
 
+/* Footer */
+
 footer{
     width: 100%;
     background-color: var(--maincolor);
@@ -139,6 +167,11 @@ footer{
     font-weight: bold;
     margin-top: 5%;
 }
+
+/* FIM FOOTER */
+
+/*RESPONSIVIDADE BÁSICA */ 
+
 @media (max-width: 700px) {
     #grad-container{
         display: flex;
@@ -149,3 +182,7 @@ footer{
     }
 
 }
+
+/* FIM RESPONSIVIDADE BÁSICA*/
+/* Validado em 25/05/2020 às 17:50, o validador aponta problemas relacionados a CUSTOM PROPERTIES, as variáveis em CSS*/ 
+/* Pesquisando descobri que o validador não suporta elas, fonte: "https://www.freecodecamp.org/forum/t/css-custom-property-or-variable-gives-validation-error-but-why/234744" */

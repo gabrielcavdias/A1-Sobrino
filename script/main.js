@@ -1,4 +1,4 @@
-var tamanhoFont = Number(100)
+var tamanhoFont = Number(120)
 var altcon = 0
 const root = document.documentElement;
 function aumentar(){ 
@@ -25,3 +25,5 @@ function altocontraste(){
         root.style.setProperty("color", "#fff")
     }
 }
+//Não conheço formas de validar o Javascript, mas não foram apontados erros de síntaxe
+//Utilizei o JS para as funções de Aumentar/Diminuir fonte e ativar o modo alto contraste pois não encontrei formas de fazer só com HTML e CSS
