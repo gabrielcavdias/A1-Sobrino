@@ -1,11 +1,11 @@
-var tamanhoFont = Number(120)
-var altcon = 0
+let tamanhoFont = Number(120)
+let altcon = 0
 const root = document.documentElement;
 function aumentar(){ 
-     root.style.setProperty("font-size",tamanhoFont++ + "%")
+     root.style.setProperty("font-size",`${tamanhoFont++}%`)
 }
 function diminuir(){ 
-    root.style.setProperty("font-size",tamanhoFont-- + "%")
+    root.style.setProperty("font-size",`${tamanhoFont--}%`)
 }
 function altocontraste(){
     if(altcon>0){
